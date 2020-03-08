@@ -1,3 +1,4 @@
+var PORT = process.env.PORT || 8000
 var app = require('express')();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
@@ -7,7 +8,7 @@ var https = require('https')
 var numberOfMembers = [4, 4, 4, 4];
 var rooms = []
 
-server.listen(5000);
+server.listen(PORT);
 rooms[0] = uuid.v4()
 rooms[1] = uuid.v4()
 rooms[2] = uuid.v4()
