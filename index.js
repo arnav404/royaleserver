@@ -9,7 +9,7 @@ var numberOfMembers = [0, 0, 4, 3];
 var rooms = []
 var peopleLeft = {}
 
-server.listen(5000);
+server.listen(PORT);
 rooms[0] = uuid.v4()
 rooms[1] = uuid.v4()
 rooms[2] = uuid.v4()
